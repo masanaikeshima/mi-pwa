@@ -1,5 +1,4 @@
-import { Camera, CameraResultType } from '@capacitor/camera';
-import { Capacitor } from '@capacitor/core';
+
 
 
 /**
@@ -31,18 +30,6 @@ export default function User() {
 		<div>
 			User page
 
-			{Capacitor.getPlatform()}
-
-			{Capacitor.isNativePlatform() ?
-				<div>
-					"I'm a native app!"
-				</div>
-				:
-
-				<div>
-					I'm a PWA or Web app!
-				</div>
-			}
 			<input
 				type="file"
 				accept="image/*"
